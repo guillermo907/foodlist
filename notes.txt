@@ -1,0 +1,7 @@
+Api is deployed via push to main branch on Render.com
+
+site address: 
+https://foodlist.onrender.com/
+
+Food list endpoint: 
+https://foodlist.onrender.com/foods

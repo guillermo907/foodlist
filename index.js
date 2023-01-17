@@ -1,20 +1,15 @@
 const express = require('express');
+var path = require('path');
 const foodList = require('./mocks/foods.js');
 
 const app = express();
 const port =  process.env.PORT || 3000;
 
 app.listen(port, ()=>{
-    console.log(`Process up con ${port}`);
+    console.log(`Process up on: ${port}`);
 })
 
-app.get('/', (req, res) => {
-    try{
-        res.send('Foodlist');
-    } catch(e){
-        res.status(400).send(e)
-    } 
-})
+app.use(express.static(__dirname + '/client/dist/'));
 
 app.get('/foods',(req, res)=>{
     try{
