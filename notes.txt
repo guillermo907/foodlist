@@ -5,3 +5,6 @@ https://foodlist.onrender.com/
 
 Food list endpoint: 
 https://foodlist.onrender.com/foods
+
+
+Food client/dist comes from "astrotest" proyect, (running npm run build on it)
